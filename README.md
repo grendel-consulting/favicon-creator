@@ -4,4 +4,4 @@ Configuration wrapper around [Real Favicon Generator](https://realfavicongenerat
 
 ## Usage
 
-`pnpm run icons`
+`pnpm run build`
