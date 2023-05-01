@@ -1,0 +1,20 @@
+{
+  "name": "favicons-for-grendel-consulting",
+  "description": "Favicons for Grendel Consulting",
+  "version": "0.1.0",
+  "author": "James Ramirez",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "real-favicon generate faviconDescription.json faviconData.json icons",
+    "check": "real-favicon check-for-update --fail-on-update faviconData.json"
+  },
+  "devDependencies": {
+    "cli-real-favicon": "0.0.8"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+  }
+}

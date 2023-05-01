@@ -1,24 +1,21 @@
 {
-  "name": "favicons",
-  "description": "",
-  "version": "0.1.0",
+  "name": "favicon-creato",
+  "description": "Generating favicons from SVG and config",
   "author": "James Ramirez",
+  "version": "0.1.0",
   "license": "MIT",
   "private": true,
-  "sideEffects": false,
   "scripts": {
-    "icons": "real-favicon generate faviconDescription.json faviconData.json icons",
-    "inject": "real-favicon inject faviconData.json icons build/*.html",
-    "update": "real-favicon check-for-update --fail-on-update faviconData.json"
+    "preinstall": "npx only-allow pnpm",
+    "build": "turbo run build",
+    "check": "turbo run check"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
-    "cli-real-favicon": "0.0.8"
+    "turbo": "1.9.3"
   },
   "engines": {
     "node": ">=18",
-    "pnpm": ">=7"
-  }
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@8.3.1"
 }
