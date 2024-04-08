@@ -1,5 +1,5 @@
 {
-  "name": "favicon-creato",
+  "name": "favicon-creator",
   "description": "Generating favicons from SVG and config",
   "author": "James Ramirez",
   "version": "0.1.0",
@@ -13,9 +13,9 @@
   "devDependencies": {
     "turbo": "1.10.13"
   },
+  "packageManager": "pnpm@8.7.0",
   "engines": {
-    "node": ">=18",
+    "node": ">=20",
     "pnpm": ">=8"
-  },
-  "packageManager": "pnpm@8.7.0"
+  }
 }
