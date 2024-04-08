@@ -18,6 +18,12 @@ importers:
         specifier: 0.0.8
         version: 0.0.8
 
+  brands/grendel-realms:
+    devDependencies:
+      cli-real-favicon:
+        specifier: 0.0.8
+        version: 0.0.8
+
 packages:
 
   /async@3.2.4:
