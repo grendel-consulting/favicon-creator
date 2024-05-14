@@ -11,7 +11,7 @@
     "check": "real-favicon check-for-update --fail-on-update faviconData.json"
   },
   "devDependencies": {
-    "cli-real-favicon": "0.0.8"
+    "cli-real-favicon": "0.0.9"
   },
   "engines": {
     "node": ">=18",
