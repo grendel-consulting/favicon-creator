@@ -5,9 +5,11 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  follow-redirects@<1.15.4: '>=1.15.4'
-  follow-redirects@<=1.15.5: '>=1.15.6'
   axios@>=0.8.1 <0.28.0: '>=0.28.0'
+  follow-redirects@<=1.15.5: '>=1.15.6'
+  follow-redirects@<1.15.4: '>=1.15.4'
+  isarray: npm:@socketregistry/isarray@^1
+  safer-buffer: npm:@socketregistry/safer-buffer@^1
 
 importers:
 
@@ -24,6 +26,14 @@ importers:
         version: 0.0.9
 
 packages:
+
+  '@socketregistry/isarray@1.0.5':
+    resolution: {integrity: sha512-ShtX9jbnTiEl2sXAjCS02ihrjiEStKleX4NgOxUu977jX/PRSS7sGuM2ssN3vCeuzmLphzeCeIXExxR5dcw8bA==}
+    engines: {node: '>=18.20.4'}
+
+  '@socketregistry/safer-buffer@1.0.5':
+    resolution: {integrity: sha512-x6W5FZJwngd3UqOA0TXucXuD/RdGm4NHvnDYC2topSlfyA2vtTff9lcXpuQqzi/TxxlHEfYc0toRA+VDQSdfxw==}
+    engines: {node: '>=18.20.4'}
 
   async@3.2.4:
     resolution: {integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==}
@@ -157,9 +167,6 @@ packages:
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
-  isarray@0.0.1:
-    resolution: {integrity: sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==}
-
   match-stream@0.0.2:
     resolution: {integrity: sha512-TbN21KrvmZ4mHzKqSFeNNNYeOGNNoEE0sQjhOGlHc+W6XhV4nEhJqaQTJj106NF+NYjyJ7pXh23+OQ1d306ORw==}
 
@@ -227,9 +234,6 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  safer-buffer@2.1.2:
-    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
-
   setimmediate@1.0.5:
     resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
 
@@ -295,6 +299,10 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
 snapshots:
+
+  '@socketregistry/isarray@1.0.5': {}
+
+  '@socketregistry/safer-buffer@1.0.5': {}
 
   async@3.2.4: {}
 
@@ -454,7 +462,7 @@ snapshots:
 
   iconv-lite@0.6.3:
     dependencies:
-      safer-buffer: 2.1.2
+      safer-buffer: '@socketregistry/safer-buffer@1.0.5'
 
   inflight@1.0.6:
     dependencies:
@@ -462,8 +470,6 @@ snapshots:
       wrappy: 1.0.2
 
   inherits@2.0.4: {}
-
-  isarray@0.0.1: {}
 
   match-stream@0.0.2:
     dependencies:
@@ -540,7 +546,7 @@ snapshots:
     dependencies:
       core-util-is: 1.0.3
       inherits: 2.0.4
-      isarray: 0.0.1
+      isarray: '@socketregistry/isarray@1.0.5'
       string_decoder: 0.10.31
 
   rfg-api@0.5.3:
@@ -556,8 +562,6 @@ snapshots:
   rimraf@2.7.1:
     dependencies:
       glob: 7.2.3
-
-  safer-buffer@2.1.2: {}
 
   setimmediate@1.0.5: {}
 
