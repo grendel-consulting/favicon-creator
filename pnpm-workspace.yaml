@@ -1,2 +1,4 @@
 packages:
   - 'brands/*'
+
+minimumReleaseAge: 2160
