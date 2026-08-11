@@ -27,13 +27,13 @@ importers:
 
 packages:
 
-  '@socketregistry/isarray@1.0.5':
-    resolution: {integrity: sha512-ShtX9jbnTiEl2sXAjCS02ihrjiEStKleX4NgOxUu977jX/PRSS7sGuM2ssN3vCeuzmLphzeCeIXExxR5dcw8bA==}
-    engines: {node: '>=18.20.4'}
+  '@socketregistry/isarray@1.0.8':
+    resolution: {integrity: sha512-DM81ydAjO2GJKkNf2Vn17InJ37sEYLK1YyhxpDX16OdbOpYlsDIw8QyeFEUZtc7GqsQXbcPKJmz3j/2qS+BhKQ==}
+    engines: {node: '>=18'}
 
-  '@socketregistry/safer-buffer@1.0.5':
-    resolution: {integrity: sha512-x6W5FZJwngd3UqOA0TXucXuD/RdGm4NHvnDYC2topSlfyA2vtTff9lcXpuQqzi/TxxlHEfYc0toRA+VDQSdfxw==}
-    engines: {node: '>=18.20.4'}
+  '@socketregistry/safer-buffer@1.0.10':
+    resolution: {integrity: sha512-jbEY37bJn51W9pP1pXxIoGcQbmbi9EQDtnXfWBjGLNvKC1iEyNLOaGm8ee7dN7Z+KgJdQbrrDjjD3HbGeOFC4A==}
+    engines: {node: '>=18'}
 
   '@turbo/darwin-64@2.9.14':
     resolution: {integrity: sha512-t7QiPflaEyBE4oayeZtSmu4mEfjgIrcNlNNl1z1dmIVPqEdtA7+CfTf8d7KXsOGPh6aNgWjKxyvQg9uGfDQF+A==}
@@ -301,9 +301,9 @@ packages:
 
 snapshots:
 
-  '@socketregistry/isarray@1.0.5': {}
+  '@socketregistry/isarray@1.0.8': {}
 
-  '@socketregistry/safer-buffer@1.0.5': {}
+  '@socketregistry/safer-buffer@1.0.10': {}
 
   '@turbo/darwin-64@2.9.14':
     optional: true
@@ -481,7 +481,7 @@ snapshots:
 
   iconv-lite@0.6.3:
     dependencies:
-      safer-buffer: '@socketregistry/safer-buffer@1.0.5'
+      safer-buffer: '@socketregistry/safer-buffer@1.0.10'
 
   inflight@1.0.6:
     dependencies:
@@ -565,7 +565,7 @@ snapshots:
     dependencies:
       core-util-is: 1.0.3
       inherits: 2.0.4
-      isarray: '@socketregistry/isarray@1.0.5'
+      isarray: '@socketregistry/isarray@1.0.8'
       string_decoder: 0.10.31
 
   rfg-api@0.5.3:
